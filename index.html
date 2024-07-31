@@ -23,7 +23,7 @@
     <nav class="navbar bg-body-tertiary p-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="img/Initial_logo_SECOPLA.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            <img src="img/Mini_logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
             Datos de acceso
           </a>
         </div>
@@ -31,7 +31,7 @@
    
       <div>
         <div class="grid text-center p-3">
-            <p class="fs-5">Datos de la Unidad</p>
+            <p class="fs-5 fw-semibold">Datos de la Unidad</p>
         </div>
         
     <section class="container-fluid">
@@ -63,19 +63,54 @@
             <label for="">Número Económico</label>
             <select class="form-select" aria-label="Default select example">
                 <option selected>Seleccionar opción</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">K-19</option>
+                <option value="2">Secopla</option>
+                <option value="3">Jared</option>
               </select>
         </div>
         <div class="p-3">
             <label for="">Placas</label>
-            <input class="form-control" type="text" placeholder="Número de placa" aria-label="default input example">
+            <input id="num_placa" class="form-control" type="text" placeholder="Número de placa" aria-label="default input example" required>
         </div>
         <section>
             <div class="p-3">
                 <label for="">Nombre del responsable</label>
-                <input class="form-control" type="text" placeholder="Nombre completo" aria-label="default input example">
+                <input id="nom_resp" class="form-control" type="text" placeholder="Nombre completo" aria-label="default input example">
+            </div>
+            <div class="p-3">
+                <label for="">Teléfono</label>
+                <input id="num_tel" class="form-control" type="text" placeholder="Número" aria-label="default input example">
+            </div>
+            <div class="p-3">
+                <label for="">Zona</label>
+                <input id="zona" class="form-control" type="text" placeholder="Ingresa zona" aria-label="default input example">
+            </div>
+            <div class="p-3">
+                <label for="">Región</label>
+                <input id="region" class="form-control" type="text" placeholder="Número" aria-label="default input example">
+            </div>
+        </section>
+        <section>
+            <div class="grid text-center p-3">
+                <p class="fs-6 fw-semibold">El vehículo cuenta con:</p>
+            </div>
+            <div class="p-3">
+                <label for="">Tarjeta de circulación</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                    <option selected>Selecciona tu respuesta</option>
+                    <option value="1">SI</option>
+                    <option value="2">NO</option>
+                    <option value="3">N/A</option>
+                  </select>
+            </div>
+            <div class="p-3">
+                <label for="">Póliza de seguro vigente original 2 años</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                    <option selected>Selecciona tu respuesta</option>
+                    <option value="1">SI</option>
+                    <option value="2">NO</option>
+                    <option value="3">N/A</option>
+                  </select>
             </div>
         </section>
     </section>
