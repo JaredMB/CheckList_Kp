@@ -1,0 +1,17 @@
+/* Personaliza los estilos aquí */
+.form-check-input {
+    /* Animación al marcar la casilla */
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-check-input:checked {
+    transform: scale(1.2) rotate(45deg);
+    background-color: #28a745; /* Verde para indicar completado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-check-label {
+    /* Estilos para las etiquetas */
+    font-weight: bold;
+    color: #333;
+}
