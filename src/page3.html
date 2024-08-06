@@ -116,12 +116,6 @@
                                 <option value="6">N/A</option>
                               </select>
                         </div>
-                        <section class="container-fluid p-2">
-                          <div class="mb-3">
-                              <label for="formFileMultiple" class="form-label">Seleccionar archivos</label>
-                              <input class="form-control" type="file" id="formFileMultiple" multiple>
-                            </div>
-                        </section>
                     </div>
                   </div>
                 </div>
@@ -661,10 +655,28 @@
               </div>
         </section>
 
-        <section class="container-fluid p-2">
+        <section class="container-fluid">
             <div class="mb-3">
                 <label for="formFileMultiple" class="form-label">Seleccionar archivos</label>
-                <input class="form-control" type="file" id="formFileMultiple" multiple>
+                <table>
+                  <thead>
+                    <tr>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="text-center">
+                        <label for="">Frente</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                      </th>
+                      <td class="text-center">
+                        <label for="">Posterior</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
         </section>
 
