@@ -1,708 +1,728 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checklist de entrega y recepción de vehículos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist de entrega y recepción de vehículos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="container-fluid text-center" style="width: 300px;">
-        <img src="../img/Initial_logo_SECOPLA.png" class="img-fluid" alt="..." >
-    </div>
-    <br>
-    <div class="grid text-center p-3">
-        <h2>Checklist de entrega y recepción de vehículos</h2>
-    </div>
-    
-    <nav class="navbar bg-body-tertiary p-3">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="../img/Mini_logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Datos de acceso
-          </a>
+  <section class="container-fluid">
+    <div class="text-center">
+      <div class="row">
+        <div class="col">
+          <img src="../img/Initial_logo_SECOPLA.png" class="img-fluid" alt="..." style="width: 220px;">
         </div>
-    </nav>
-   
-    <section>
-        <br>
-        <div>
-            <div class="grid text-center p-3">
-                <p class="fs-5 fw-semibold">DAÑOS</p>
-            </div>
+        <div class="col">
+          <p class="fs-6 fw-semibold">Checklist de entrega y recepción de vehículos</p>
         </div>
+      </div>
+    </div>
 
-            <div class="grid text-center p-3">
-                <p class="fst-italic">Especifíca los daños de la unidad<br>utilizando la siguiente simbología.</p>
+    <div>
+      <div class="grid text-center">
+        <p class="fs-5 fw-semibold">DAÑOS</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="grid text-center">
+      <p class="fst-italic">Especifíca los daños de la unidad<br>utilizando la siguiente simbología.</p>
+    </div>
+    <section class="container-fluid">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              PARTE FRONTAL DEL VEHICULO
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="p-3">
+                <label for="">Faro izquierdo:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">DAÑO</option>
+                  <option value="5">SIN DAÑO</option>
+                  <option value="6">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Faro derecho:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">DAÑO</option>
+                  <option value="5">SIN DAÑO</option>
+                  <option value="6">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Cofre:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Parrilla:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">DAÑO</option>
+                  <option value="5">SIN DAÑO</option>
+                  <option value="6">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Facia delantera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Parabrisas:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">DAÑO</option>
+                  <option value="5">SIN DAÑO</option>
+                  <option value="6">N/A</option>
+                </select>
+              </div>
             </div>
-
-        <section class="container-fluid">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      PARTE FRONTAL DEL VEHICULO
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="p-3">
-                            <label for="">Faro izquierdo:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">DAÑO</option>
-                                <option value="5">SIN DAÑO</option>
-                                <option value="6">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Faro derecho:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">DAÑO</option>
-                                <option value="5">SIN DAÑO</option>
-                                <option value="6">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Cofre:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Parrilla:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">DAÑO</option>
-                                <option value="5">SIN DAÑO</option>
-                                <option value="6">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Facia delantera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Parabrisas:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">DAÑO</option>
-                                <option value="5">SIN DAÑO</option>
-                                <option value="6">N/A</option>
-                              </select>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      PARTE TRASERA DEL VEHICULO
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="p-3">
-                            <label for="">Calavera izquierda:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">DAÑO</option>
-                                <option value="5">SIN DAÑO</option>
-                                <option value="6">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Calavera derecha:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">DAÑO</option>
-                                <option value="5">SIN DAÑO</option>
-                                <option value="6">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Cajuela:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Chapa cajuela:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Facia trasera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Medallón:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">DAÑO</option>
-                                <option value="5">SIN DAÑO</option>
-                                <option value="6">N/A</option>
-                              </select>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                      PARTE LATERAL IZQUIERDA DEL VEHICULO
-                    </button>
-                  </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="p-3">
-                            <label for="">Salpicadera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Rin izquierdo delantero:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Lanta delantera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Espejo lateral:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Puerta delantera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Chapa puerta delantera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Vidrio puerta delantera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Chapa puerta trasera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Llanta trasera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Rin izquierdo trasero:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        PARTE LATERAL DERECHA DEL VEHICULO
-                      </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">
-                        <div class="p-3">
-                            <label for="">Salpicadera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Rin derecho delantero:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Llanta delantera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Espejo lateral:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Puerta delantera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Chapa puerta delantera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Vidrio puerta delantera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Puerta trasera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Chapa puerta trasera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Llanta trasera:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Rin derecho trasero:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">RAYÓN</option>
-                                <option value="2">ABOLLON</option>
-                                <option value="3">FILTRACIÓN</option>
-                                <option value="4">SIN DAÑO</option>
-                                <option value="5">N/A</option>
-                              </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-        </section>
-
-        <section class="container-fluid">
-            <div>
-                <div class="grid text-center p-3">
-                    <p class="fs-5 fw-semibold">OTROS</p>
-                </div>
-            </div>
-
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                      REVISIÓN DE EQUIPO PREVENTIVO
-                    </button>
-                  </h2>
-                  <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="p-3">
-                            <label for="">Indicadores (Testigos prendidos):</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">DAÑO</option>
-                                <option value="4">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Incluye botoquín de primeros auxilios:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                                <option value="4">DAÑO</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Cuenta con inmovilizador:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                                <option value="4">DAÑO</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">El aire acondicionado es funcional:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                                <option value="4">DAÑO</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Cinturones de seguridad en buen estado:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                                <option value="4">DAÑO</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Bolsas de aire funcionales:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                                <option value="4">DAÑO</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Cuenta con protección cargo:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                                <option value="4">DAÑO</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Limpia parabrisas funcional (plumillas):</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                                <option value="4">DAÑO</option>
-                              </select>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                      REVISIÓN EXTERIOR
-                    </button>
-                  </h2>
-                  <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="p-3">
-                            <label for="">Luces funcionales:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                                <option value="4">DAÑO</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Cuenta con daños el parabrisas y medallón:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                                <option value="4">DAÑO</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Direccionales e intermitentes funcionales:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                                <option value="4">DAÑO</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Gobernador instalado 100 km/h:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                                <option value="4">DAÑO</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">GPS Telcel instalado:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                                <option value="4">DAÑO</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Alarma funcional:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                                <option value="4">DAÑO</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Cuenta con tapones/rines:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                                <option value="4">DAÑO</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">Interiores en buen estado:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                                <option value="4">DAÑO</option>
-                              </select>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </section>
-
-        <section class="container-fluid p-3">
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-        </section>
-
-        <section class="container-fluid">
-            <div class="mb-3">
-                <label for="formFileMultiple" class="form-label">Seleccionar archivos</label>
-                <table>
-                  <thead>
-                    <tr>
-                      
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row" class="text-center">
-                        <label for="">Frente</label>
-                        <input class="form-control" type="file" id="formFileMultiple" multiple>
-                      </th>
-                      <td class="text-center">
-                        <label for="">Posterior</label>
-                        <input class="form-control" type="file" id="formFileMultiple" multiple>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-        </section>
-
-        <div class="d-grid gap-2 col-6 mx-auto p-3">
-            <button class="btn btn-primary" type="button">Guardar respuestas</button>
           </div>
-
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              PARTE TRASERA DEL VEHICULO
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="p-3">
+                <label for="">Calavera izquierda:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">DAÑO</option>
+                  <option value="5">SIN DAÑO</option>
+                  <option value="6">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Calavera derecha:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">DAÑO</option>
+                  <option value="5">SIN DAÑO</option>
+                  <option value="6">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Cajuela:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Chapa cajuela:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Facia trasera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Medallón:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">DAÑO</option>
+                  <option value="5">SIN DAÑO</option>
+                  <option value="6">N/A</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              PARTE LATERAL IZQUIERDA DEL VEHICULO
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="p-3">
+                <label for="">Salpicadera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Rin izquierdo delantero:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Lanta delantera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Espejo lateral:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Puerta delantera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Chapa puerta delantera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Vidrio puerta delantera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Chapa puerta trasera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Llanta trasera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Rin izquierdo trasero:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              PARTE LATERAL DERECHA DEL VEHICULO
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="p-3">
+                <label for="">Salpicadera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Rin derecho delantero:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Llanta delantera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Espejo lateral:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Puerta delantera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Chapa puerta delantera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Vidrio puerta delantera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Puerta trasera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Chapa puerta trasera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Llanta trasera:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Rin derecho trasero:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">RAYÓN</option>
+                  <option value="2">ABOLLON</option>
+                  <option value="3">FILTRACIÓN</option>
+                  <option value="4">SIN DAÑO</option>
+                  <option value="5">N/A</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <nav aria-label="Page navigation example" class="p-4">
-        <ul class="pagination justify-content-center">
-          <li class="page-item">
-            <a class="page-link" href="page2.html">Anterior</a>
-          </li>
-          <li class="page-item"><a class="page-link" href="../index.html">1</a></li>
-          <li class="page-item"><a class="page-link" href="page2.html">2</a></li>
-          <li class="page-item"><a class="page-link active" href="#">3</a></li>
-          <li class="page-item disabled">
-            <a class="page-link">Siguiente</a>
-          </li>
-        </ul>
-      </nav>
-    
+    <section class="container-fluid">
+      <div>
+        <div class="grid text-center">
+          <p class="fs-5 fw-semibold">OTROS</p>
+        </div>
+      </div>
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              REVISIÓN DE EQUIPO PREVENTIVO
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="p-3">
+                <label for="">Indicadores (Testigos prendidos):</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">DAÑO</option>
+                  <option value="4">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Incluye botoquín de primeros auxilios:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                  <option value="4">DAÑO</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Cuenta con inmovilizador:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                  <option value="4">DAÑO</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">El aire acondicionado es funcional:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                  <option value="4">DAÑO</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Cinturones de seguridad en buen estado:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                  <option value="4">DAÑO</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Bolsas de aire funcionales:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                  <option value="4">DAÑO</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Cuenta con protección cargo:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                  <option value="4">DAÑO</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Limpia parabrisas funcional (plumillas):</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                  <option value="4">DAÑO</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              REVISIÓN EXTERIOR
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="p-3">
+                <label for="">Luces funcionales:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                  <option value="4">DAÑO</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Cuenta con daños el parabrisas y medallón:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                  <option value="4">DAÑO</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Direccionales e intermitentes funcionales:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                  <option value="4">DAÑO</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Gobernador instalado 100 km/h:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                  <option value="4">DAÑO</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">GPS Telcel instalado:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                  <option value="4">DAÑO</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Alarma funcional:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                  <option value="4">DAÑO</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Cuenta con tapones/rines:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                  <option value="4">DAÑO</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Interiores en buen estado:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                  <option value="4">DAÑO</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid p-3">
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="mb-3">
+        <label for="formFileMultiple" class="form-label">Seleccionar archivos:</label>
+        <table>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-center">
+                <label for="">Frente</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+              </th>
+              <th class="text-center">
+                <label for="">Posterior</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+              </th>
+            </tr>
+            <tr>
+              <th scope="row" class="text-center">
+                <label for="">Izquierdo (conductor)</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+              </th>
+              <th class="text-center">
+                <label for="">Derecho (conductor)</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+              </th>
+              <tr>
+                <th scope="row" class="text-center">
+                  <label for="">Tablero</label>
+                  <input class="form-control" type="file" id="formFileMultiple" multiple>
+                </th>
+                <th class="text-center">
+                  <label for="">Llanta de refacción</label>
+                  <input class="form-control" type="file" id="formFileMultiple" multiple>
+                </th>
+              </tr>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="d-grid gap-2 col-6 mx-auto p-3">
+      <button class="btn btn-primary" type="button">Guardar respuestas</button>
+    </div>
+
+  </section>
+
+  <nav aria-label="Page navigation example" class="p-4">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="page2.html">Anterior</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="../index.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="page2.html">2</a></li>
+      <li class="page-item"><a class="page-link active" href="#">3</a></li>
+      <li class="page-item disabled">
+        <a class="page-link">Siguiente</a>
+      </li>
+    </ul>
+  </nav>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html

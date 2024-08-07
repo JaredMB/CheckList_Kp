@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checklist de entrega y recepción de vehículos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        .datepicker {
-            z-index: 9999 !important; /* Asegurar que el calendario esté por encima de otros elementos */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist de entrega y recepción de vehículos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .datepicker {
+      z-index: 9999 !important;
+      /* Asegurar que el calendario esté por encima de otros elementos */
+    }
+  </style>
 </head>
+
 <body>
 
   <section class="container-fluid">
@@ -24,261 +28,274 @@
         </div>
       </div>
     </div>
-   
+
     <div>
       <div class="grid text-center">
         <p class="fs-5 fw-semibold">DATOS DE UNIDAD</p>
-      </div> 
+      </div>
     </div>
   </section>
 
-    <section class="container-fluid">
-        <div class="">
-            <div class="container mt-5">
-                <input type="text" class="form-control" id="datepicker" placeholder="Selecciona una fecha">
-            </div>
-        </div>
-    
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.es.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('#datepicker').datepicker({
-                    format: "dd/mm/yyyy",
-                    language: "es",
-                    autoclose: true,
-                    todayHighlight: true
-                });
-            });
-        </script>
-    </section>
+  <section class="container-fluid text-center">
+    <div>
+      <label for="">Fecha</label>
+    </div>
+    <div>
+      <input type="date" id="nacimiento" name="nacimiento" class="sm-form-control">
+    </div>
+    <!-- <div class="">
+      <div class="container mt-5">
+        <input type="text" class="form-control" id="datepicker" placeholder="Selecciona una fecha">
+      </div>
+    </div>
 
-    <section class="container-fluid">
-        <div>
-          
-        </div>
-        <div class="p-2">
-            <label for="">Número Económico</label>
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Seleccionar opción</option>
-                <option value="1">K-19</option>
-                <option value="2">Secopla</option>
-                <option value="3">Jared</option>
-              </select>
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.es.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#datepicker').datepicker({
+          format: "dd/mm/yyyy",
+          language: "es",
+          autoclose: true,
+          todayHighlight: true
+        });
+      });
+    </script> -->
+  </section>
 
-          <div class="container-fluid text-center">
-            <div class="row">
-              <div class="col">
-                <br>
-                <label for="">Placas</label>
-                <input id="placas" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" disabled>
+  <section class="container-fluid">
+    <div class="p-2">
+      <label for="">Número Económico</label>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Seleccionar opción</option>
+        <option value="1">K-19</option>
+        <option value="2">Secopla</option>
+        <option value="3">Jared</option>
+      </select>
+    </div>
+
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col">
+          <br>
+          <label for="">Placas</label>
+          <input id="placas" type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm" disabled>
+        </div>
+        <div class="col">
+          <label for="">Nombre del responsable</label>
+          <input id="nom_responsable" type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm" disabled>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="">Teléfono </label>
+          <input id="telefono" type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm" disabled>
+        </div>
+        <div class="col">
+          <label for="">Zona</label>
+          <input id="zona" type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm" disabled>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="">Región</label>
+          <input id="region" type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm" disabled>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <section>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne.One" aria-expanded="false" aria-controls="flush-collapseOne.One">
+              EL VEHÍCULO CUENTA CON:
+            </button>
+          </h2>
+          <div id="flush-collapseOne.One" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="p-3">
+                <label for="">Tarjeta de circulación:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                </select>
               </div>
-              <div class="col">
-                <label for="">Nombre del responsable</label>
-                <input id="placas" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" disabled>
+              <div class="p-3">
+                <label for="">Póliza de seguro vigente original 2 años:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                </select>
               </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <label for="">Teléfono </label>
-                <input id="placas" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" disabled>
+              <div class="p-3">
+                <label for="">Engomado y comprobante de verificación:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                </select>
               </div>
-              <div class="col">
-                <label for="">Zona</label>
-                <input id="placas" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" disabled>
+              <div class="p-3">
+                <label for="">Póliza de garantía y mantenimiento original:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                </select>
               </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <label for="">Región</label>
-                <input id="placas" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" disabled>
+              <div class="p-3">
+                <label for="">Engomado y comprobante de verificación:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Manual del conductor original:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Póliza de asistencia vial original:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Bolsa de herramienta:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Gato con manivel:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Reflejantes:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Llanta de refacción:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                </select>
+              </div>
+              <div class="p-3">
+                <label for="">Botiquín de primeros auxilios:</label>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                </select>
               </div>
             </div>
           </div>
-        </section>
-
-        <section>
-                <section>
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne.One" aria-expanded="false" aria-controls="flush-collapseOne.One">
-                                EL VEHÍCULO CUENTA CON:
-                            </button>
-                          </h2>
-                          <div id="flush-collapseOne.One" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <div class="p-3">
-                                    <label for="">Tarjeta de circulación:</label>
-                                    <select class="form-select form-select-sm" aria-label="Small select example">
-                                        <option selected>Selecciona tu respuesta</option>
-                                        <option value="1">SI</option>
-                                        <option value="2">NO</option>
-                                        <option value="3">N/A</option>
-                                      </select>
-                                </div>
-                                <div class="p-3">
-                                    <label for="">Póliza de seguro vigente original 2 años:</label>
-                                    <select class="form-select form-select-sm" aria-label="Small select example">
-                                        <option selected>Selecciona tu respuesta</option>
-                                        <option value="1">SI</option>
-                                        <option value="2">NO</option>
-                                        <option value="3">N/A</option>
-                                      </select>
-                                </div>
-                                <div class="p-3">
-                                    <label for="">Engomado y comprobante de verificación:</label>
-                                    <select class="form-select form-select-sm" aria-label="Small select example">
-                                        <option selected>Selecciona tu respuesta</option>
-                                        <option value="1">SI</option>
-                                        <option value="2">NO</option>
-                                        <option value="3">N/A</option>
-                                      </select>
-                                </div>
-                                <div class="p-3">
-                                    <label for="">Póliza de garantía y mantenimiento original:</label>
-                                    <select class="form-select form-select-sm" aria-label="Small select example">
-                                        <option selected>Selecciona tu respuesta</option>
-                                        <option value="1">SI</option>
-                                        <option value="2">NO</option>
-                                        <option value="3">N/A</option>
-                                      </select>
-                                </div>
-                                <div class="p-3">
-                                    <label for="">Engomado y comprobante de verificación:</label>
-                                    <select class="form-select form-select-sm" aria-label="Small select example">
-                                        <option selected>Selecciona tu respuesta</option>
-                                        <option value="1">SI</option>
-                                        <option value="2">NO</option>
-                                        <option value="3">N/A</option>
-                                      </select>
-                                </div>
-                                <div class="p-3">
-                                    <label for="">Manual del conductor original:</label>
-                                    <select class="form-select form-select-sm" aria-label="Small select example">
-                                        <option selected>Selecciona tu respuesta</option>
-                                        <option value="1">SI</option>
-                                        <option value="2">NO</option>
-                                        <option value="3">N/A</option>
-                                      </select>
-                                </div>
-                                <div class="p-3">
-                                    <label for="">Póliza de asistencia vial original:</label>
-                                    <select class="form-select form-select-sm" aria-label="Small select example">
-                                        <option selected>Selecciona tu respuesta</option>
-                                        <option value="1">SI</option>
-                                        <option value="2">NO</option>
-                                        <option value="3">N/A</option>
-                                      </select>
-                                </div>
-                                <div class="p-3">
-                                    <label for="">Bolsa de herramienta:</label>
-                                    <select class="form-select form-select-sm" aria-label="Small select example">
-                                        <option selected>Selecciona tu respuesta</option>
-                                        <option value="1">SI</option>
-                                        <option value="2">NO</option>
-                                        <option value="3">N/A</option>
-                                      </select>
-                                </div>
-                                <div class="p-3">
-                                    <label for="">Gato con manivel:</label>
-                                    <select class="form-select form-select-sm" aria-label="Small select example">
-                                        <option selected>Selecciona tu respuesta</option>
-                                        <option value="1">SI</option>
-                                        <option value="2">NO</option>
-                                        <option value="3">N/A</option>
-                                      </select>
-                                </div>
-                                <div class="p-3">
-                                    <label for="">Reflejantes:</label>
-                                    <select class="form-select form-select-sm" aria-label="Small select example">
-                                        <option selected>Selecciona tu respuesta</option>
-                                        <option value="1">SI</option>
-                                        <option value="2">NO</option>
-                                        <option value="3">N/A</option>
-                                      </select>
-                                </div>
-                                <div class="p-3">
-                                    <label for="">Llanta de refacción:</label>
-                                    <select class="form-select form-select-sm" aria-label="Small select example">
-                                        <option selected>Selecciona tu respuesta</option>
-                                        <option value="1">SI</option>
-                                        <option value="2">NO</option>
-                                        <option value="3">N/A</option>
-                                      </select>
-                                </div>
-                                <div class="p-3">
-                                    <label for="">Botiquín de primeros auxilios:</label>
-                                    <select class="form-select form-select-sm" aria-label="Small select example">
-                                        <option selected>Selecciona tu respuesta</option>
-                                        <option value="1">SI</option>
-                                        <option value="2">NO</option>
-                                        <option value="3">N/A</option>
-                                      </select>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </section>
-        </section>
-        <section>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo.Two" aria-expanded="false" aria-controls="flush-collapseTwo.Two">
-                        TARJETAS:
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo.Two" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="p-3">
-                            <label for="">Tarjeta de gasolina:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                              </select>
-                        </div>
-                        <div class="p-3">
-                            <label for="">TAG:</label>
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>Selecciona tu respuesta</option>
-                                <option value="1">SI</option>
-                                <option value="2">NO</option>
-                                <option value="3">N/A</option>
-                              </select>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </section>
+        </div>
+      </div>
     </section>
+  </section>
+  <section>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo.Two" aria-expanded="false" aria-controls="flush-collapseTwo.Two">
+            TARJETAS:
+          </button>
+        </h2>
+        <div id="flush-collapseTwo.Two" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="p-3">
+              <label for="">Tarjeta de gasolina:</label>
+              <select class="form-select form-select-sm" aria-label="Small select example">
+                <option selected>Selecciona tu respuesta</option>
+                <option value="1">SI</option>
+                <option value="2">NO</option>
+                <option value="3">N/A</option>
+              </select>
+            </div>
+            <div class="p-3">
+              <label for="">TAG:</label>
+              <select class="form-select form-select-sm" aria-label="Small select example">
+                <option selected>Selecciona tu respuesta</option>
+                <option value="1">SI</option>
+                <option value="2">NO</option>
+                <option value="3">N/A</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
 
-    <nav class="p-3" aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-          <li class="page-item disabled">
-            <a class="page-link">Anterior</a>
-          </li>
-          <li class="page-item"><a class="page-link active" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="src/page2.html">2</a></li>
-          <li class="page-item"><a class="page-link" href="src/page3.html">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="src/page2.html">Siguiente</a>
-          </li>
-        </ul>
-      </nav>
-    
+  <nav class="p-3" aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link">Anterior</a>
+      </li>
+      <li class="page-item"><a class="page-link active" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="src/page2.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="src/page3.html">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="src/page2.html">Siguiente</a>
+      </li>
+    </ul>
+  </nav>
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
