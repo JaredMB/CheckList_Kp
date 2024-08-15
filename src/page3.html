@@ -710,9 +710,38 @@
       </div>
     </section>
 
-    <!------ EVIDENCIAS DE FOTOS ------>
+
+
+    <!------ EVIDENCIAS DE FOTOS SOLO CON CÁMARA ------>
 
     <section class="container-fluid">
+      <div class="mb-3">
+        <label for="formFileMultiple" class="form-label">Seleccionar archivos:</label>
+        <table>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-center">
+                <label for="">Frente:</label>
+                <input id="picture1" class="form-control" type="file" name="pic1" accept="image/*"
+                  capture="environment">
+              </th>
+            </tr>
+            <tr>
+              <th class="text-center">
+                <label for="">Posterior:</label>
+                <input id="picture2" class="form-control" type="file" name="pic2" accept="image/*"
+                  capture="environment">
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <!------ EVIDENCIAS DE FOTOS CON MÁS OPCIONES DE ARCHIVOS ------>
+
+    <!-- <section class="container-fluid">
       <div class="mb-3">
         <label for="formFileMultiple" class="form-label">Seleccionar archivos:</label>
         <table>
@@ -766,63 +795,7 @@
           </tbody>
         </table>
       </div>
-    </section>
-
-
-    <!-- PRUEBA DE VARIAS FOTOS -->
-    <section class="container">
-      <div class="mb-3">
-        <label for="formFileMultiple" class="form-label">Seleccionar archivos:</label>
-        <table>
-          <tbody>
-            <tr>
-              <th scope="row" class="text-center">
-                <label for="">Frente:</label>
-                <input class="form-control" type="file" id="formFileMultiple" multiple>
-              </th>
-            <tr>
-              <th scope="row" class="text-center">
-                <h1>Captura una Foto desde la Cámara</h1>
-                <input class="" type="file" id="cameraInput" accept="image/*" capture="environment"
-                  style="display:none;">
-                <button onclick="abrirCamara()">Abrir Cámara</button>
-                <img id="preview" src="" alt="Previsualización de la imagen capturada"
-                  style="display:none; margin-top: 10px;">
-
-                <input class="" type="file" id="cameraInput" accept="image/*" capture="environment"
-                  style="display:none;">
-                <button onclick="abrirCamara()">Abrir Cámara</button>
-                <img id="preview2" src="" alt="Previsualización de la imagen capturada"
-                  style="display:none; margin-top: 10px;">
-
-                <script>
-                  function abrirCamara() {
-                    document.getElementById('cameraInput').click();
-                  }
-
-                  document.getElementById('cameraInput').addEventListener('change', function (e) {
-                    const file = e.target.files[0];
-                    if (file) {
-                      const reader = new FileReader();
-                      reader.onload = function (event) {
-                        const imgElement = document.getElementById('preview');
-                        imgElement.src = event.target.result;
-                        imgElement.style.display = 'block';
-                      }
-                      reader.readAsDataURL(file);
-                    }
-                  });
-                </script>
-              </th>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <input type="file" id="picture1" name="pic" accept="image/*" capture="environment"> 
-
-
+    </section> -->
 
     <!------ BTN DE GUARDAR RESPUESTAS ------>
 
