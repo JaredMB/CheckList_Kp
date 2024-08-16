@@ -39,6 +39,7 @@
     </div>
   </section>
 
+  <!------ INPUT FECHA ------>
   <section class="container-fluid text-center">
     <div>
       <label for="">Fecha</label>
@@ -71,6 +72,7 @@
   </section>
 
   <section class="container-fluid">
+    <!------ FUNCIÓN PARA CREAR FOLIO ------>
     <div class="mx-auto p-2" style="width: 200px;">
       <label for=""></label>
       <div class="input-group mb-3">
@@ -81,9 +83,11 @@
         </div>
       </div>
     </div>
+    <!------ SELECCIÓN DE NÚMERO ECONÓMICO ------>
     <div class="p-2">
       <label for="">Número Económico</label>
       <select id="num_economico" class="form-select" aria-label="Default select example">
+        <!------ Aquí debe existir una variable que mande a traer valores para seleccionar ------>
         <option selected>Seleccionar opción</option>
         <option value="1">K-19</option>
         <option value="2">Secopla</option>
@@ -91,35 +95,41 @@
       </select>
     </div>
 
+    <!------ DATOS DE UNIDAD AUTORRELLENABLES ------>
     <div class="container-fluid text-center">
       <div class="row">
         <div class="col">
-          <br>
-          <label for="">Placas</label>
+          <label for="">Placas:</label>
           <input id="placas" type="text" class="form-control" aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-sm" disabled>
         </div>
         <div class="col">
-          <label for="">Nombre del responsable</label>
+          <label for="">KM:</label>
+          <input id="km" type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm" disabled>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="">Nombre del responsable:</label>
           <input id="nom_responsable" type="text" class="form-control" aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-sm" disabled>
         </div>
-      </div>
-      <div class="row">
         <div class="col">
-          <label for="">Teléfono </label>
+          <br>
+          <label for="">Teléfono:</label>
           <input id="telefono" type="text" class="form-control" aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-sm" disabled>
         </div>
-        <div class="col">
-          <label for="">Zona</label>
-          <input id="zona" type="text" class="form-control" aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-sm" disabled>
-        </div>
       </div>
       <div class="row">
         <div class="col">
-          <label for="">Región</label>
+          <label for="">Zona:</label>
+          <input id="zona" type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm" disabled>
+        </div>
+        <div class="col">
+          <label for="">Región:</label>
           <input id="region" type="text" class="form-control" aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-sm" disabled>
         </div>
@@ -241,6 +251,15 @@
                   <option value="3">N/A</option>
                 </select>
               </div>
+              <div class="p-2">
+                <label for="">Placa delantera:</label>
+                <select id="placa_del" class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Selecciona tu respuesta</option>
+                  <option value="1">SI</option>
+                  <option value="2">NO</option>
+                  <option value="3">N/A</option>
+                </select>
+              </div>
             </div>
           </div>
         </div>
@@ -273,6 +292,24 @@
             <div class="p-2">
               <label for="">TAG:</label>
               <select id="tag" class="form-select form-select-sm" aria-label="Small select example">
+                <option selected>Selecciona tu respuesta</option>
+                <option value="1">SI</option>
+                <option value="2">NO</option>
+                <option value="3">N/A</option>
+              </select>
+            </div>
+            <div class="p-2">
+              <label for="">Comprobante de verificación:</label>
+              <select id="comp_verifica" class="form-select form-select-sm" aria-label="Small select example">
+                <option selected>Selecciona tu respuesta</option>
+                <option value="1">SI</option>
+                <option value="2">NO</option>
+                <option value="3">N/A</option>
+              </select>
+            </div>
+            <div class="p-2">
+              <label for="">Placa trasera:</label>
+              <select id="placa_tras" class="form-select form-select-sm" aria-label="Small select example">
                 <option selected>Selecciona tu respuesta</option>
                 <option value="1">SI</option>
                 <option value="2">NO</option>
